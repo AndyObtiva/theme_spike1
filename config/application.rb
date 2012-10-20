@@ -11,6 +11,12 @@ end
 
 module ThemeSpike1
   class Application < Rails::Application
+    
+  # don't attempt to auto-require the moonshine manifests into the rails env
+  config.paths['app/manifests'] = 'app/manifests'
+  config.paths['app/manifests'].skip_eager_load!
+
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -58,5 +64,7 @@ module ThemeSpike1
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    # 
+    # config.themes_for_rails.base_dir = File.join(Rails.root, "tmp")    
   end
 end

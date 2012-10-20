@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+%html
+%head
+  %title 
+    ThemeSpike1
+  = theme_stylesheet_link_tag    "application", :media => "all"
+  = csrf_meta_tags
+%body
+  = yield
+  = theme_javascript_include_tag "application"
