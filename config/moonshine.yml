@@ -19,7 +19,7 @@
 :application: theme_spike1
 
 # Deploy user
-:user: rails
+:user: ec2-user
 
 # Timezone to set server's time to. Defaults to UTC
 #:time_zone: UTC
