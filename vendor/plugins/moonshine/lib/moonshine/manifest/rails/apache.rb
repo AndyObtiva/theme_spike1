@@ -17,7 +17,7 @@ module Moonshine::Manifest::Rails::Apache
   # if <tt>configuration[:ssl]</tt> is present
   def apache_server
     package "apache2-mpm-worker", :ensure => :installed
-    service "apache2", :require => package("apache2-mpm-worker"), :restart => '/etc/init.d/apache2 restart', :ensure => :running
+    service "apache2", :require => package("apache2-mpm-worker"), :restart => 'sudo /etc/init.d/apache2 restart', :ensure => :running
     a2enmod('rewrite')
     a2enmod('status')
     a2enmod('expires')
