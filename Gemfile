@@ -6,7 +6,7 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'themes_for_rails'
+gem 'themes_for_rails', '0.5.1'
 gem 'haml-rails', '0.3.5'
 
 # Gems used only for assets and not required

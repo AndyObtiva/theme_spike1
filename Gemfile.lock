@@ -132,5 +132,5 @@ DEPENDENCIES
   rails (= 3.2.8)
   sass-rails (~> 3.2.3)
   sqlite3
-  themes_for_rails
+  themes_for_rails (= 0.5.1)
   uglifier (>= 1.0.3)
