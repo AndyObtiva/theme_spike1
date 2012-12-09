@@ -8,13 +8,14 @@ gem 'rails', '3.2.8'
 gem 'sqlite3'
 gem 'themes_for_rails', '0.5.1'
 gem 'haml-rails', '0.3.5'
+gem 'libv8', '~> 3.11.8'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem 'therubyracer'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
