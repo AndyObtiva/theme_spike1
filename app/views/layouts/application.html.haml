@@ -3,8 +3,10 @@
 %head
   %title 
     ThemeSpike1
-  = theme_stylesheet_link_tag    "application", :media => "all"
+  = stylesheet_link_tag    "application", :media => "all"
+  = theme_stylesheet_link_tag    "application", :media => "all" if params[:theme].present?
   = csrf_meta_tags
 %body
   = yield
-  = theme_javascript_include_tag "application"
+  = javascript_include_tag "application"
+  = theme_javascript_include_tag "application" if params[:theme].present?

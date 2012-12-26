@@ -26,6 +26,7 @@
 
 # Directory where application is deployed to
 :deploy_to: /srv/theme_spike1
+:deploy_via: :copy
 
 # Primary domain application will be accessed as 
 :domain: ec2-50-19-38-90.compute-1.amazonaws.com
